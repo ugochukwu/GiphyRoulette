@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Giphy Roulette</string>
+    <string name="giphy_random">Giphy Random</string>
+</resources>

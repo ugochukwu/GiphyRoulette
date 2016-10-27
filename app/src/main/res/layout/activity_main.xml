@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.onwordiesquire.mobile.giphyroulette.presentation.gifgallery.MainActivity">
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    app:title="@string/giphy_random"
+    android:background="?colorPrimary"
+    android:layout_width="match_parent"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+
+    android:layout_height="?actionBarSize"/>
+
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar.Large"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:theme="@style/progressBar"
+        android:visibility="invisible"
+        android:layout_height="64dp" />
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/progressBar"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
